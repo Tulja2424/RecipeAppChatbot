@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Recipe App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <nav>
+            <h1>Recipe App</h1>
+
+            <form>
+                <input
+                    type="text"
+                    class="searchBox"
+                    placeholder="Search for recipes..."
+                >
+
+                <button type="submit" class="searchButton">
+                    Search
+                </button>
+            </form>
+        </nav>
+    </header>
+
+    <main>
+
+        <!-- Hero Section -->
+        <section class="hero">
+            <div class="hero-content">
+                <h2>Discover Delicious Recipes</h2>
+                <p>
+                    Search thousands of recipes from around the world
+                </p>
+            </div>
+        </section>
+
+        <!-- Recipe Results -->
+       <section>
+            <div class="recipe-container">
+                <h2>Search Your Favorite Recipes</h2>
+            </div>
+        </section>
+
+        <!-- Recipe Popup -->
+        <div class="recipe-details">
+            <button type="button" class="recipe-close-btn">
+                ✕
+            </button>
+
+            <div class="recipe-detail-content"></div>
+        </div>
+
+    </main>
+
+    <script src="script.js"></script>
+
+</body>
+</html>

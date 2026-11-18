@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chef AI - Recipe App</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="chat-body">
+
+    <header>
+        <nav>
+            <h1>Recipe App</h1>
+
+            <!-- Go back to the recipe search page -->
+            <a href="index.html" class="nav-btn">← Back to Recipes</a>
+        </nav>
+    </header>
+
+    <main class="chat-page">
+
+        <h2 class="chat-title">🍳 Chef AI - Ask me about recipes!</h2>
+
+        <!-- All chat messages appear here -->
+        <div class="chat-messages">
+            <div class="message bot">Hi! I'm Chef AI. Ask me anything about recipes, ingredients or cooking tips.</div>
+        </div>
+
+        <!-- Type a question and press Send -->
+        <form class="chat-form">
+            <input type="text" class="chat-input" placeholder="Example: How do I make pasta?" autocomplete="off">
+            <button type="submit" class="chat-send">Send</button>
+        </form>
+
+    </main>
+
+    <script src="chatbot.js"></script>
+
+</body>
+</html>

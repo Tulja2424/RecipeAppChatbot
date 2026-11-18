@@ -271,3 +271,130 @@ header form{
         font-size:1.7rem;
     }
 }
+/* ================= CHEF AI BUTTON (top-right) ================= */
+
+header nav{
+    gap:15px;
+}
+
+header form{
+    margin-left:auto;           /* pushes search + Chef AI button to the right */
+}
+
+.nav-btn{
+    padding:12px 22px;
+    border-radius:50px;
+    background:#3e2723;
+    color:white;
+    font-weight:600;
+    text-decoration:none;
+    white-space:nowrap;
+    transition:.3s;
+}
+
+.nav-btn:hover{
+    background:#5d4037;
+}
+
+/* ================= CHEF AI CHAT PAGE ================= */
+
+.chat-body{
+    height:100vh;
+    display:flex;
+    flex-direction:column;
+}
+
+.chat-page{
+    flex:1;
+    min-height:0;               
+    width:90%;
+    max-width:800px;
+    margin:25px auto;
+    display:flex;
+    flex-direction:column;
+}
+
+.chat-title{
+    text-align:center;
+    color:#5d4037;
+    margin-bottom:15px;
+}
+
+.chat-messages{
+    flex:1;
+    overflow-y:auto;
+    display:flex;
+    flex-direction:column;
+    gap:12px;
+    padding:20px;
+    background:white;
+    border-radius:20px 20px 0 0;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.message{
+    max-width:80%;
+    padding:12px 16px;
+    border-radius:16px;
+    line-height:1.6;
+    white-space:pre-wrap;       
+}
+
+.message.user{
+    align-self:flex-end;
+    background:#ff5722;
+    color:white;
+}
+
+.message.bot{
+    align-self:flex-start;
+    background:#fdf6f0;
+    color:#3e2723;
+}
+
+.chat-form{
+    display:flex;
+    gap:10px;
+    padding:15px;
+    background:white;
+    border-top:1px solid #f3e5dc;
+    border-radius:0 0 20px 20px;
+    box-shadow:0 8px 20px rgba(0,0,0,0.1);
+}
+
+.chat-input{
+    flex:1;
+    min-width:0;
+    padding:12px 16px;
+    border:1px solid #ffccbc;
+    border-radius:50px;
+    outline:none;
+    font-size:1rem;
+}
+
+.chat-send{
+    padding:12px 24px;
+    border:none;
+    border-radius:50px;
+    background:#ff5722;
+    color:white;
+    font-weight:600;
+    cursor:pointer;
+}
+
+.chat-send:disabled{
+    opacity:.6;
+    cursor:not-allowed;
+}
+
+@media(max-width:768px){
+
+    header form{
+        margin-left:0;
+    }
+
+    .chat-page{
+        width:95%;
+        margin:15px auto;
+    }
+}

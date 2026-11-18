@@ -39,9 +39,7 @@ async function fetchRecipes(searchData){
                 <div class="recipe-content">
                     <h3>${meal.strMeal}</h3>
 
-                    <p>
-                        <span>${meal.strArea}</span> Dish
-                    </p>
+                    
 
                     <p>
                         Category:
@@ -113,7 +111,7 @@ function openRecipePopup(meal){
 
     recipeDetails.style.display = "block";
 }
-
+// to close the recipe details popup when the close button is clicked
 recipeCloseBtn.addEventListener("click", ()=>{
 
     recipeDetails.style.display = "none";
@@ -122,7 +120,8 @@ recipeCloseBtn.addEventListener("click", ()=>{
 searchButton.addEventListener("click",(e)=>{
 
     e.preventDefault();
-
+    //if we don't use preventDefault() here, the page will reload when we click the search button,
+    //and we will lose our search results.
     const searchInput = searchBox.value.trim();
 
     if(!searchInput){

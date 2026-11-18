@@ -1,6 +1,6 @@
 ## RecipeApp ##
 
-Search recipes from [TheMealDB](https://www.themealdb.com/) and chat with **Chef AI**, a cooking chatbot powered by a free, open-source AI model (Llama 3.2) running on your own computer through [Ollama](https://ollama.com).
+Search recipes from [TheMealDB](https://www.themealdb.com/) and chat with **Chef AI**, a cooking chatbot powered by a free, open-source AI model (Llama 3.2) running on the computer through [Ollama](https://ollama.com).
 
 ## Files
 
@@ -16,7 +16,7 @@ Search recipes from [TheMealDB](https://www.themealdb.com/) and chat with **Chef
 
 1. The user types a question on `chat.html`.
 2. `chatbot.js` sends the conversation to Ollama at `http://localhost:11434/api/chat`.
-3. Ollama runs the Llama 3.2 model on this computer and sends back the answer.
+3. Ollama runs the Llama 3.2 model on the computer and sends back the answer.
 4. The answer is shown on the page.
 
 There's no API key and no cost, and the data never leaves your computer.

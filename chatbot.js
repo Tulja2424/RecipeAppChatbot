@@ -1,8 +1,3 @@
-// ================= CHEF AI CHATBOT =================
-// Sends the user's question to a free, open-source AI model (Llama 3.2)
-// running on this computer through Ollama, and shows the answer.
-
-// ---------- Settings ----------
 const OLLAMA_URL = "http://localhost:11434/api/chat"; // Ollama's chat address
 const MODEL_NAME = "llama3.2";                         // model downloaded with: ollama pull llama3.2
 
@@ -13,7 +8,7 @@ const chatInput = document.querySelector(".chat-input");
 const chatSend = document.querySelector(".chat-send");
 
 // ---------- Conversation memory ----------
-// The first message tells the AI how to behave (called the "system prompt").
+
 const messages = [
     {
         role: "system",
@@ -27,7 +22,7 @@ const messages = [
 function addMessage(text, type) {
     const div = document.createElement("div");
     div.classList.add("message", type); // type is "user" or "bot"
-    div.textContent = text;              // textContent keeps it safe (no HTML)
+    div.textContent = text;              
     chatMessages.appendChild(div);
     chatMessages.scrollTop = chatMessages.scrollHeight; // scroll to the newest message
     return div;
